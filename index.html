@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sorting Visualizer Pro</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Sorting Visualizer Pro</h1>
+
+    <p>Visualize Sorting Algorithms Beautifully</p>
+
+</header>
+
+
+<section class="top-controls">
+
+    <button id="newArray">
+        Generate Array
+    </button>
+
+    <button id="pauseBtn">
+        Pause
+    </button>
+
+    <button id="resumeBtn">
+        Resume
+    </button>
+
+    <button id="resetBtn">
+        Reset
+    </button>
+
+    <button id="themeBtn">
+        🌙 Dark Mode
+    </button>
+
+    <button id="soundBtn">
+        🔊 Sound
+    </button>
+
+    <div>
+
+        <label>Array Size</label>
+
+        <input type="range" id="sizeSlider" min="10" max="100" value="50">
+
+    </div>
+
+    <div>
+
+        <label>Speed</label>
+
+        <input type="range" id="speedSlider" min="1" max="200" value="80">
+
+    </div>
+    <div class="custom-array">
+    
+        <label>Custom Array</label>
+    
+        <input type="text" id="customArray" placeholder="10,45,23,89,12">
+    
+    </div>
+    
+    <button id="loadArray">
+        Load Array
+    </button>
+
+</section>
+
+
+<section class="dashboard">
+
+    <aside class="left">
+
+        <h2>Algorithms</h2>
+
+        <button class="algorithm"
+                id="bubbleBtn">
+            Bubble Sort
+        </button>
+
+        <button class="algorithm"
+                id="selectionBtn">
+            Selection Sort
+        </button>
+
+        <button class="algorithm"
+                id="insertionBtn">
+            Insertion Sort
+        </button>
+
+        <button class="algorithm"
+                id="mergeBtn">
+            Merge Sort
+        </button>
+
+        <button class="algorithm"
+                id="quickBtn">
+            Quick Sort
+        </button>
+
+        <button class="algorithm"
+                id="heapBtn">
+            Heap Sort
+        </button>
+
+        <button class="algorithm"
+                id="shellBtn">
+            Shell Sort
+        </button>
+
+        <button class="algorithm"
+                id="radixBtn">
+            Radix Sort
+        </button>
+
+    </aside>
+
+
+    <main>
+
+        <div class="progress">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+        <div id="arrayContainer">
+
+        </div>
+
+    </main>
+
+
+    <aside class="right">
+
+        <div class="card">
+
+            <h3>Statistics</h3>
+
+            <p>Algorithm :
+                <span id="algorithmName">
+                    None
+                </span>
+            </p>
+
+            <p>Comparisons :
+                <span id="comparisons">
+                    0
+                </span>
+            </p>
+
+            <p>Swaps :
+                <span id="swaps">
+                    0
+                </span>
+            </p>
+
+            <p>Time :
+                <span id="time">
+                    0 ms
+                </span>
+            </p>
+
+        </div>
+
+        <div class="card">
+
+    <h3>Algorithm Information</h3>
+
+    <div class="info-row">
+        <span>Algorithm</span>
+        <strong id="algorithmName">None</strong>
+    </div>
+
+    <div class="info-row">
+        <span>Best Case</span>
+        <strong id="bestCase">-</strong>
+    </div>
+
+    <div class="info-row">
+        <span>Average Case</span>
+        <strong id="averageCase">-</strong>
+    </div>
+
+    <div class="info-row">
+        <span>Worst Case</span>
+        <strong id="worstCase">-</strong>
+    </div>
+
+    <div class="info-row">
+        <span>Space</span>
+        <strong id="spaceCase">-</strong>
+    </div>
+
+    <hr>
+
+    <p id="algorithmDescription">
+
+        Select an algorithm to view details.
+
+    </p>
+
+</div>
+
+    </aside>
+
+</section>
+
+
+<script src="script.js"></script>
+
+<script src="bubble.js"></script>
+
+<script src="selection.js"></script>
+
+<script src="insertion.js"></script>
+
+<script src="merge.js"></script>
+
+<script src="quick.js"></script>
+
+<script src="heap.js"></script>
+
+<script src="shell.js"></script>
+
+<script src="radix.js"></script>
+
+<div id="toast">
+    ✅ Sorting Completed Successfully
+</div>
+
+</body>
+
+</html>
